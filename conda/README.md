@@ -1,7 +1,8 @@
 # Conda Recipe
 
-`meta.yaml` is used to package up Nemosis to publish on Conda forge.
+`recipe.yaml` is used to package up Nemosis to publish on Conda forge.
 
-It was generated with [grayskull](https://github.com/conda/grayskull).
+More info on this file structure is available [here](https://conda-forge.org/docs/maintainer/example_recipes/pure-python/).
 
-When the dependencies of nemosis change, unfortunately we need to update them in `meta.yaml` as well as `../pyproject.yaml`.
+When the dependencies of Nemosis change in `../pyproject.toml`, we don't _need_ to update this file too.
+Conda has scripts to check new releases on Pypi and adjust them accordingly.
